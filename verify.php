@@ -9,7 +9,6 @@ if ($_GET['Status'] == 'OK') {
     $client = new SoapClient('https://sandbox.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
     #########################
     //$client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
-    $client = new SoapClient('https://sandbox.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
 
     $result = $client->PaymentVerification([
         'MerchantID' => $merchantID,
